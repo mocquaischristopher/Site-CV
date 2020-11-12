@@ -3,6 +3,16 @@
   font-family: "Gagalin-Regular";
   src: url("../Gagalin-Regular.otf");
 }
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+h2 h3 h4{
+  font-family: 'Montserrat', sans-serif;
+}
+a p #cvhaut #cvbas{
+  font-family: 'Source Sans Pro', sans-serif;
+}
 body{
   padding: 0;
   margin: 0;
@@ -29,6 +39,9 @@ h2{
   font-size: 3em;
   text-align: center;
 }
+h3, h4, div>p{
+  text-align: center;
+}
 header>p{
   margin: 0;
   padding: 10px;
@@ -41,7 +54,6 @@ header>p{
   margin: auto;
   border-radius: 10px;
   font-size: 40px;
-
 }
 
 nav{
@@ -70,8 +82,39 @@ li{
 li>a{
   text-decoration: none;
   color: white;
-  font-size: 1,5rem;
+  font-size: 1.7rem;
   padding: 5px 0px;
+  font-family: 'Source Sans Pro';
+}
+div{
+  padding: 70px 0;
+}
+.moitie{
+  width: 50%;
+}
+.ib{
+  display: inline-block;
+}
+.ib>p{
+  margin: 0;
+}
+.orange{
+  color: orange;
+}
+.bleu{
+  color: blue;
+}
+#Competence{
+  float: left;
+}
+#Logiciel{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.footer{
+  text-align: left;
 }
 footer{
   background-image: url(../img/map-footer.png);
@@ -80,5 +123,9 @@ footer{
 
 }
 #cvbas{
-  border-radius: 5px;
+  display: block;
+  width: 10%;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 40px;
 }
