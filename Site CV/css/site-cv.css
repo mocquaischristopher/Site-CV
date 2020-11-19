@@ -134,17 +134,55 @@ h3{
 .onefive, .twofive{
   padding: 0 10px;
   text-align: center;
+  height: 120px;
 }
 .onefive>div{
   display: inline-block;
-  padding: 0;
+  padding: 10px;
+  text-align: center;
+}
+.redim{
+  position: relative;
 }
 .redim>img{
   height: 80px;
 }
+.zoom>img{
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.zoom:hover>img{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+.div-txt{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay:hover{
+  opacity: 1;
+}
 .twofive>div{
   display: inline-block;
-  padding: 0;
+  padding: 10px;
 }
 .clear{
   clear: both;
@@ -160,11 +198,18 @@ h4{
 .droit{
   float: right;
   box-sizing: border-box;
+  position: relative;
 }
 .gauche, .droit{
-  text-align: center;
+  height: 475px;
 }
-
+.gauche>img, .droit>img{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .container{
   display: flex;
   position: relative;
@@ -242,12 +287,20 @@ h4{
 /* début footer */
 .footer{
   text-align: left;
+  font-size: xx-large;
 }
 footer{
   background-image: url(../img/map-footer.png);
   background-size: cover;
   background-position: center;
-
+}
+#Contact>.droit{
+  height: auto;
+  padding: 100px 150px;
+}
+#Contact>.droit>a>img{
+  width: 120%;
+  margin: 5px;
 }
 .cvbas{
   display: block;
