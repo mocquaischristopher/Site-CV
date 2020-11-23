@@ -2,6 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/site-cv.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,9 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <title></title>
   </head>
   <body>
+    <div id="scrollUp">
+      <a href="#top"><img src="img/to_top.png"/></a>
+    </div>
     <header>
       <h1>CHRISTOPHER MOCQUAIS</h1>
       <!-- https://www.ffonts.net/Gagalin-Regular.font -->
@@ -23,7 +28,11 @@
       </a>
       <p>Escautpont (France)</p>
     </header>
-    <nav>
+    <nav id="myNav" class="overlaynav">
+      <a href="javascript:void(0)"
+        class="closebtn" onclick="closeNav()">
+        ×
+      </a>
       <ul>
         <li><a href="#Profil">Profil</a></li>
         <li><a href="#Competence">Compétences</a></li>
@@ -37,6 +46,10 @@
         <!-- https://www.jag-conseil.com/techniques/20-styles-de-bordures-animees-en-css-pour-un-site-moderne/ -->
       </ul>
     </nav>
+    <span style="font-size:35px;cursor:pointer"
+        onclick="openNav()">
+        ≡
+    </span>
     <section>
       <div id="Profil" class="fond">
         <h3>A propos de moi</h3>
@@ -122,23 +135,23 @@
       <div id="Experience" class="fond">
         <h3>Expériences</h3>
         <div class="Ageval">
-          <div class="moitie gauche">
+          <div class="moitie moitie2 gauche">
             <h4>Agent polyvalent informatique</h4>
             <p><strong>Ageval | Septembre 2020</strong></p>
             <p><em>Base programmation (HTML, CSS, JavaScript, PHP) / Base WebDesign
             Culture Digital / Refaire CV, E-réputation, Profil Linkedln
             </em></p>
           </div>
-          <div class="moitie droit">
+          <div class="moitie moitie2 droit">
             <img src="img/ageval1.png" alt="logo d'Ageval">
           </div>
           <p class="clear"></p>
         </div>
         <div class="ATIS">
-          <div class="moitie gauche">
+          <div class="moitie moitie2 gauche">
             <img src="img/atis1.png" alt="logo d'ATIS">
           </div>
-          <div class="moitie droit">
+          <div class="moitie moitie2 droit">
             <h4>Agent de maintenance informatique</h4>
             <p><strong>A.T.I.S. | Novembre 2018 - Juillet 2019</strong><p>
               <p><em>Démonter les PC, imprimantes et écrans (cathodique et écrans plats).
@@ -149,21 +162,21 @@
           <p class="clear"></p>
         </div>
         <div class="AgriBeauce">
-          <div class="moitie gauche">
+          <div class="moitie moitie2 gauche">
             <h4>Travail saisonnier</h4>
             <p><strong>AgriBeauce | Août 2011 - Octobre 2013</strong></p>
             <p><em>Tri des pommes de terre par rapport aux défaut en laboratoire.</em></p>
           </div>
-          <div class="moitie droit">
+          <div class="moitie moitie2 droit">
             <img src="img/agribeauce1.png" alt="logo d'AgriBeauce">
           </div>
           <p class="clear"></p>
         </div>
         <div class="Elf">
-          <div class="moitie gauche">
+          <div class="moitie moitie2 gauche">
             <img src="img/elf1.png" alt="logo d'Elf">
           </div>
-          <div class="moitie droit">
+          <div class="moitie moitie2 droit">
             <h4>Employé polyvalent de station-service</h4>
             <p><strong>Elf des Amazones | 2007 -2008</strong></p>
             <p><em>Conseils aux clients / Encaissements / Mise en rayon.</em></p>
@@ -236,5 +249,30 @@
         </a>
       </div>
     </footer>
+
+
+    <script>
+      jQuery(function(){
+        $(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 200 ) {
+              $('#scrollUp').css('right','40px');
+            } else {
+              $('#scrollUp').removeAttr( 'style' );
+            }
+
+          });
+        });
+      });
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "40%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
   </body>
 </html>
