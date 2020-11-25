@@ -2,10 +2,10 @@
 @font-face {
   font-family: "Gagalin-Regular";
   src: url("/Gagalin-Regular.otf");
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-font-family: 'Montserrat', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
 
 h2 h3 h4{
   font-family: 'Montserrat', sans-serif;
@@ -35,7 +35,6 @@ body{
   p{
     font-size: 1.5em;
   }
-
   /* Début header */
   header{
     background-color: #cae8ff;
@@ -64,10 +63,19 @@ body{
   }
   .cvhaut{
     display: block;
-    width: 10%;
+    width: 150px;
+    text-align: center;
     margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
     border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvhaut:hover {
+    background-color: black;
   }
   header>p{
     margin: 0;
@@ -75,9 +83,9 @@ body{
     color: black;
     font-size: xx-large;
   }
-  /* fin header */
+    /* fin header */
 
-  /* début nav */
+    /* début nav */
   nav{
     background-color: #1e73be;
     position: sticky;
@@ -320,14 +328,19 @@ body{
   }
   .cvbas{
     display: block;
-    width: 10%;
+    width: 150px;
+    text-align: center;
     margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
     border-radius: 10px;
-    font-size: 40px;display: block;
-    width: 10%;
-    margin: auto;
-    border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvbas:hover {
+    background-color: black;
   }
   footer>div>a{
     text-decoration: none;
@@ -339,6 +352,7 @@ body{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
   #scrollUp{
     position: fixed;
     bottom : 10px;
@@ -375,10 +389,19 @@ body{
   }
   .cvhaut{
     display: block;
-    width: 12%;
+    width: 150px;
+    text-align: center;
     margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
     border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvhaut:hover {
+    background-color: black;
   }
   header>p{
     margin: 0;
@@ -386,7 +409,7 @@ body{
     color: black;
     font-size: xx-large;
   }
-/*Début nav*/
+ /*Début nav*/
   nav{
     background-color: #1e73be;
     position: sticky;
@@ -426,17 +449,17 @@ body{
   span{
     display: none;
   }
-
+ /* Début section */
   .fond{
     background-color: #f5f5f5;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .5);
   }
+ /* Début Logiciels */
   #Logiciel{
     height: 400px;
   }
   #Logiciel>h3{
-    margin-block-start: 2em;
-    margin-block-end: 2em;
+    margin: 2em 0;
   }
   .onefive, .twofive{
     padding: 0 10px;
@@ -491,15 +514,18 @@ body{
   .overlay:hover{
     opacity: 1;
   }
+ /* Début expériences */
   .moitie2{
     width: 50%;
   }
   .gauche{
+    padding: 0;
     float: left;
     box-sizing: border-box;
     position: relative;
   }
   .droit{
+    padding: 0;
     float: right;
     box-sizing: border-box;
     position: relative;
@@ -512,11 +538,15 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
+  }
+  .AgriBeauce>.moitie2>img{
+    top: 70%;
   }
   .clear{
     clear: both;
   }
+ /* Début Diplôme */
   .container{
     display: flex;
     position: relative;
@@ -529,16 +559,15 @@ body{
     height: 25rem;
     border-radius: 5px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .10);
   }
   .container .card .face{
-    width: 200px;
+    width: 400px;
     height: 200px;
     transition: 0.5s;
   }
-
   .container .card .face.face1{
     position: relative;
     background: #f5f5f5;
@@ -566,7 +595,6 @@ body{
   .contain .card .face.face1 h4{
     opacity: 1;
   }
-
   .container .card .face.face2{
     position: relative;
     background: #d1c5fb;
@@ -583,10 +611,11 @@ body{
   }
   .container .card:hover .face.face2{
     transform: translateY(0);
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     height: auto;
     padding: 0;
   }
+ /* Début footer */
   .footer{
     text-align: left;
     font-size: xx-large;
@@ -598,10 +627,19 @@ body{
   }
   .cvbas{
     display: block;
-    width: 12%;
+    width: 150px;
+    text-align: center;
     margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
     border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvbas:hover {
+    background-color: black;
   }
   footer>div>a{
     text-decoration: none;
@@ -642,10 +680,19 @@ body{
   }
   .cvhaut{
     display: block;
-    width: 20%;
+    width: 150px;
+    text-align: center;
     margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
     border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvhaut:hover {
+    background-color: black;
   }
   .overlaynav {
     height: 100%;
@@ -727,4 +774,26 @@ body{
   .clear{
     clear: both;
   }
+  footer{
+    background-image: url(../img/map-footer.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .cvbas{
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    background-color: #1e73be;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow:2px 2px 6px #999;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+  }
+  .cvbas:hover {
+    background-color: black;
+  }
+
 }
