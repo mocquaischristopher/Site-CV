@@ -338,8 +338,14 @@ body{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  #scrollUp{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.5;
+  }
   div{
-    padding: 25px 0;
+    padding: 140px 0 15px 0;
   }
   header{
     background-color: #cae8ff;
@@ -373,40 +379,45 @@ body{
     border-radius: 10px;
     font-size: 40px;
   }
-  .overlaynav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
+  nav{
     background-color: #1e73be;
-    overflow-x: hidden;
-    transition: 1.0s;
+    position: sticky;
+    top: 0px;
     z-index: 2;
   }
-  ul {
-    position: relative;
-    top: 25%;
-    width: 100%;
+  nav>a{
+    display: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.25rem;
+  }
+  li:hover{
+    background-color: black;
+  }
+  li{
+    background-color: #1e73be;
+    display: inline-block;
+    width: calc(100%/4);
     text-align: center;
+    margin: 0;
+    letter-spacing: normal;
+    padding: 15px 0;
+    box-sizing: unset;
   }
-  .overlaynav a {
-    padding: 10px;
+  li>a{
     text-decoration: none;
-    font-size: 40px;
     color: white;
+    font-size: 1.7rem;
+    padding: 5px 0px;
     display: block;
-    transition: 0.3s;
+    font-family: 'Source Sans Pro';
   }
-  .overlaynav a:hover, .overlaynav a:focus {
-    color: black;
+  span{
+    display: none;
   }
-  .overlaynav .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 35px;
-    font-size: 70px;
-  }
+
   .fond{
     background-color: #f5f5f5;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .5);
@@ -589,6 +600,12 @@ body{
   }
 }
 @media screen and (max-width: 767px){
+  #scrollUp{
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.5;
+  }
   header{
     background-color: #cae8ff;
     background-blend-mode: soft-light;
@@ -620,6 +637,40 @@ body{
     margin: auto;
     border-radius: 10px;
     font-size: 40px;
+  }
+  .overlaynav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e73be;
+    overflow-x: hidden;
+    transition: 1.0s;
+    z-index: 2;
+  }
+  ul {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+  .overlaynav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlaynav a:hover, .overlaynav a:focus {
+    color: black;
+  }
+  .overlaynav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 70px;
   }
 
   .fond{
