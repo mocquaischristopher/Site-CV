@@ -266,13 +266,23 @@
       });
     </script>
     <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "65%";
-      }
 
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
+      if (window.matchMedia("(max-width: 767px)").matches) {
+        function openNav() {
+          document.getElementById("myNav").style.width = "65%";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      } else {
+          document.getElementById("myNav").style.width = "100%";
+
+        /* L'affichage est inférieur à 600px de large */
+        }
+
+
+
+
     </script>
   </body>
 </html>
