@@ -83,6 +83,7 @@ body{
     position: sticky;
     top: 0px;
     z-index: 2;
+    width: 100%!important;
   }
   nav>a{
     display: none;
@@ -379,11 +380,19 @@ body{
     border-radius: 10px;
     font-size: 40px;
   }
+  header>p{
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-size: xx-large;
+  }
+/*Début nav*/
   nav{
     background-color: #1e73be;
     position: sticky;
     top: 0px;
     z-index: 2;
+    width: 100%!important;
   }
   nav>a{
     display: none;
@@ -403,7 +412,7 @@ body{
     text-align: center;
     margin: 0;
     letter-spacing: normal;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     box-sizing: unset;
   }
   li>a{
@@ -418,52 +427,6 @@ body{
     display: none;
   }
 
-  /* .overlaynav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #1e73be;
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-  }
-  nav>a{
-    display: none;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-    letter-spacing: -0.25rem;
-  }
-  li:hover{
-    background-color: black;
-  }
-  li{
-    background-color: #1e73be;
-    display: inline-block;
-    width: calc(100%/4);
-    text-align: center;
-    margin: 0;
-    letter-spacing: normal;
-    padding: 15px 0;
-    box-sizing: unset;
-  }
-  li>a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.7rem;
-    padding: 5px 0px;
-    display: block;
-    font-family: 'Source Sans Pro';
-  }
-  .overlaynav .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 35px;
-    font-size: 70px;
-  } */
   .fond{
     background-color: #f5f5f5;
     box-shadow: 0 2px 7px rgba(0, 0, 0, .5);
