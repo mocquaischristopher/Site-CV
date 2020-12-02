@@ -49,6 +49,7 @@ header{
 }
 .cvhaut:hover {
   background-color: black;
+  color: white;
 }
 h3{
   font-size: 2.5em;
@@ -79,7 +80,7 @@ h4{
     padding: 70px 0;
   }
   p{
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   /* Début header */
   header{
@@ -146,7 +147,7 @@ h4{
   li>a{
     text-decoration: none;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding: 5px 0px;
     display: block;
     font-family: 'Source Sans Pro';
@@ -157,6 +158,16 @@ h4{
   /* fin nav */
 
   /* début section */
+  .droit2{
+    float: left;
+    height: 400px;
+  }
+  .droit2>img{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    height: 65%;
+  }
   #Competence{
     float: left;
     height: auto;
