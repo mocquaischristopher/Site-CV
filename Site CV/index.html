@@ -22,7 +22,6 @@
       <h2>Développeur Web</h2>
       <a class="cvhaut" href="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit" target="_blank" download="cv mocquais-christopher.pdf">CV
       </a>
-      <p>Escautpont (France)</p>
     </header>
     <nav id="myNav" class="overlaynav">
       <a href="javascript:void(0)"
@@ -39,10 +38,13 @@
         <li><a href="#Contact" onclick="closeNav()">Contact</a></li>
       </ul>
     </nav>
-    <span style="font-size:40px;cursor:pointer"
-        onclick="openNav()">
-        ≡
-    </span>
+    <div class="sticky">
+      <span
+          onclick="openNav()">
+          ≡
+      </span>
+    </div>
+
     <section>
       <div id="Profil" class="fond">
         <h3>A propos de moi</h3>
@@ -59,7 +61,7 @@
       </div>
       <div id="Logiciel" class="moitie">
         <h3>Logiciels</h3>
-        <div class="onefive">
+        <div class="logiciel">
           <div class="redim zoom html">
             <img class="div-img" src="img/html5.png" alt="icone HTML5">
             <div class="overlay">
@@ -90,8 +92,6 @@
               <p class="div-txt">GIT</p>
             </div>
           </div>
-        </div>
-        <div class="twofive">
           <div class="redim zoom sage">
             <img class="div-img" src="img/sage1.png" alt="icone sage">
             <div class="overlay">
@@ -253,32 +253,48 @@
       </div>
     </section>
     <footer>
-      Copyrith
       <div id="Contact">
         <h3>Contact</h3>
-        <div class="gauche gauchetel">
-          <a href="http://www.linkedin.com/in/christopher-mocquais" target="_blank">
-            <img src="img/linkedin.png" alt="Linkedin">
-          </a>
-          <a href="http://www.github.com/mocquaischristopher" target="_blank">
-            <img src="img/github.png" alt="Github">
-          </a>
+        <div class="gauchelien">
+          <div>
+            <a href="http://www.linkedin.com/in/christopher-mocquais" target="_blank">
+              <img src="img/linkedin.png" alt="Linkedin">
+            </a>
+            <p>Linkedin</p>
+          </div>
+          <div class="">
+            <a href="http://www.github.com/mocquaischristopher" target="_blank">
+              <img src="img/github.png" alt="Github">
+            </a>
+            <p>Github</p>
+          </div>
+          <div class="">
+            <a href="mailto:mocquais.christopher@gmail.com">
+              <img class="mailto" src="img/email2.png" alt="lien email">
+            </a>
+            <p>Envoyer Mail</p>
+          </div>
+          <div class="cvgauche">
+            <a class="cvbas" href="#" target="_blank" download="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit">CV
+            </a>
+          </div>
         </div>
-        <div class="droit droittel">
-          <a href="mailto:mocquais.christopher@gmail.com">
-            <img class="mailto" src="img/email2.png" alt="lien email">
+        <div class="gauchecv">
+          <a class="cvbas" href="#" target="_blank" download="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit">CV
           </a>
+
         </div>
-        <p class="clear"></p>
+        <div class="droitmap">
+          <p class="footer">Escautpont, France</p>
+        </div>
         <!-- https://lesdocs.fr/envoi-du-contenu-dun-formulaire-vers-un-email/ -->
-        <p class="footer">Escautpont, France</p>
         <!-- bouton mail/formulaire -->
-        <a class="cvbas" href="#" target="_blank" download="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit">CV
-            <!-- <img src="" alt=""> -->
-        </a>
+        <p class="clear"></p>
       </div>
     </footer>
-
+    <div class="fond">
+      <p>Copyright</p>
+    </div>
     <script>
       jQuery(function(){
         $(function () {
@@ -296,7 +312,7 @@
     <script>
 
       function openNav() {
-        document.getElementById("myNav").style.width = "65%";
+        document.getElementById("myNav").style.width = "100%";
       }
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
