@@ -66,6 +66,9 @@ h4{
 .clear{
   clear: both;
 }
+.copyright{
+  text-align: center;
+}
 /* fin css général */
 
 @media screen and (min-width: 1024px) {
@@ -152,7 +155,7 @@ h4{
     display: block;
     font-family: 'Source Sans Pro';
   }
-  span{
+  .nav{
     display: none;
   }
   /* fin nav */
@@ -446,7 +449,7 @@ h4{
     display: block;
     font-family: 'Source Sans Pro';
   }
-  span{
+  .nav{
     display: none;
   }
  /* Début section */
