@@ -69,6 +69,9 @@ h4{
 .copyright{
   text-align: center;
 }
+.photo{
+  text-align: center;
+}
 /* fin css général */
 
 @media screen and (min-width: 1024px) {
@@ -755,7 +758,9 @@ h4{
     /* Début section */
 
     /* Début Logiciels */
-
+  /* .photo{
+     transform: translateX(0%); 
+  } */
   .logiciel{
     padding: 20px 10px;
     text-align: center;
