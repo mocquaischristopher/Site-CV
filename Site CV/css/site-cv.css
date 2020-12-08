@@ -26,6 +26,12 @@ body{
   padding: 0;
   margin: 0;
 }
+#scrollUp{
+  position: fixed;
+  bottom : 10px;
+  opacity: 0.5;
+  z-index: 2;
+}
 header{
   background-color: #cae8ff;
   background-blend-mode: soft-light;
@@ -34,6 +40,22 @@ header{
   background-position: center;
   margin: 0;
   padding-bottom: 40px;
+}
+h1{
+  font-size: 4em;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  color: #1e73be;
+  font-family: 'Gagalin-Regular';
+}
+h2{
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+header>a{
+  text-decoration: none;
 }
 .cvhaut{
   display: block;
@@ -76,11 +98,7 @@ h4{
 
 @media screen and (min-width: 1024px) {
   #scrollUp{
-    position: fixed;
-    bottom : 10px;
     right: 30px;
-    opacity: 0.5;
-    z-index: 2;
   }
   #Diplome, #Portfolio, #Experience, #Logiciel, #Profil, #Contact, #Competence{
     padding: 70px 0;
@@ -89,30 +107,6 @@ h4{
     font-size: 1.4em;
   }
   /* Début header */
-  header{
-    background-color: #cae8ff;
-    background-blend-mode: soft-light;
-    background-image: url(../img/img-header2.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-  }
-  h1{
-    font-size: 4em;
-    margin: 0;
-    padding: 25px;
-    text-align: center;
-    color: #1e73be;
-    font-family: 'Gagalin-Regular';
-  }
-  h2{
-    color: black;
-    font-size: 3em;
-    text-align: center;
-  }
-  header>a{
-    text-decoration: none;
-  }
   header>p{
     margin: 0;
     padding: 10px;
@@ -164,6 +158,9 @@ h4{
   /* fin nav */
 
   /* début section */
+  .photo>img{
+    height: 48%!important;
+  }
   .droit2{
     float: left;
     height: 400px;
@@ -379,11 +376,7 @@ h4{
     padding: 60px 0;
   }
   #scrollUp{
-    position: fixed;
-    bottom : 10px;
     right: 25px;
-    opacity: 0.5;
-    z-index: 2;
   }
   div{
     padding: 15px 0;
@@ -392,23 +385,6 @@ h4{
     font-size: 1.15em;
   }
   /* Début header */
-  h1{
-    font-size: 4em;
-    margin: 0;
-    padding: 25px;
-    text-align: center;
-    color: #1e73be;
-    font-family: 'Gagalin-Regular';
-    /* lineheight 1.15 */
-  }
-  h2{
-    color: black;
-    font-size: 3em;
-    text-align: center;
-  }
-  header>a{
-    text-decoration: none;
-  }
   header>p{
     margin: 0;
     padding: 10px;
@@ -673,11 +649,7 @@ h4{
 }
 @media screen and (max-width: 767px){
   #scrollUp{
-    position: fixed;
-    bottom : 10px;
     right: 20px;
-    opacity: 0.5;
-    z-index: 2;
   }
   div{
     padding: 15px 0 15px 0;
@@ -687,21 +659,10 @@ h4{
   }
   /* Début header */
   h1{
-    font-size: 2.5em;
-    margin: 0;
-    padding: 25px;
-    text-align: center;
-    color: #1e73be;
-    font-family: 'Gagalin-Regular';
-    /* lineheight 1.15 */
+    font-size: 2.3em;
   }
   h2{
-    color: black;
     font-size: 2em;
-    text-align: center;
-  }
-  header>a{
-    text-decoration: none;
   }
     /* Début nav */
   .overlaynav {
@@ -759,7 +720,7 @@ h4{
 
     /* Début Logiciels */
   /* .photo{
-     transform: translateX(0%); 
+     transform: translateX(0%);
   } */
   .logiciel{
     padding: 20px 10px;
