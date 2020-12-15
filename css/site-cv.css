@@ -300,9 +300,9 @@ h4{
   /* fin nav */
 
   /* début section */
-#Profil{
-  height: 550px;
-}
+  #Profil{
+    height: 550px;
+  }
   .droit2{
     position: relative;
     float: left;
@@ -592,6 +592,7 @@ h4{
     /* Début nav */
   .overlaynav {
     height: 100%;
+    width: 0;
     position: fixed;
     top: 0;
     left: 0;
