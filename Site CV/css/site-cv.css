@@ -19,6 +19,7 @@ h2, h3, h4, h5, h6{
 p{
   padding: 0 15px;
 }
+  /* header */
 a p .cvhaut .cvbas{
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -31,6 +32,7 @@ body{
   bottom : 10px;
   opacity: 0.5;
   z-index: 2;
+  cursor: pointer;
 }
 header{
   background-color: #cae8ff;
@@ -73,6 +75,7 @@ header>a{
   background-color: black;
   color: white;
 }
+  /* section */
 h3{
   font-size: 2.5em;
   color: #1e73be;
@@ -85,6 +88,7 @@ h4{
 .fond{
   background-color: #f5f5f5;
 }
+  /* logiciels */
 .redim{
   position: relative;
 }
@@ -127,6 +131,7 @@ h4{
 .clear{
   clear: both;
 }
+  /* experiences */
 .container{
   display: flex;
   justify-content: space-around;
@@ -178,6 +183,28 @@ h4{
   height: auto;
   padding: 0;
 }
+  /* portfolio */
+.btn{
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  /* background-color: white; */
+  cursor: pointer;
+  margin: auto;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  /* background-color: white; */
+  cursor: pointer;
+}
+  /* footer */
 .footer{
   font-size: xx-large;
 }

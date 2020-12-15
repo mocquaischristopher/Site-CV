@@ -43,7 +43,6 @@
           ≡
       </span>
     </div>
-
     <section>
       <div id="Profil" class="fond moitie gauche">
         <h3>à propos</h3>
@@ -220,6 +219,12 @@
       </div>
       <div id="Portfolio">
         <h3>Portfolio</h3>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Voir </button>
+          <!-- <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+          <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+          <button class="btn" onclick="filterSelection('people')"> People</button> -->
+        </div>
       </div>
       <div id="Diplome" class="fond">
         <h3>Diplômes</h3>
@@ -304,9 +309,9 @@
       }
     </script>
     <script>
-    let date = new Date();
-    let year = date.getFullYear();
-    document.getElementById("date").innerHTML = year;
+      let date = new Date();
+      let year = date.getFullYear();
+      document.getElementById("date").innerHTML = year;
     </script>
   </body>
 </html>
