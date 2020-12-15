@@ -300,16 +300,18 @@ h4{
   /* fin nav */
 
   /* début section */
+#Profil{
+  height: 550px;
+}
   .photo>img{
     height: 48%!important;
   }
   .droit2{
     float: left;
-    height: 400px;
+    height: 550px;
   }
   .droit2>img{
     position: absolute;
-    top: 60%;
     left: 65%;
     height: 65%;
   }
