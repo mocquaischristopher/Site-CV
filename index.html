@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Création du Site CV HTML par rapport au CV Papier.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/site-cv.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <title>CV</title>
+    <title>Mocquais-Christopher-CV</title>
   </head>
   <body>
     <div id="scrollUp">
@@ -19,7 +20,7 @@
     <header>
       <h1>CHRISTOPHER MOCQUAIS</h1>
       <h2>Développeur Web</h2>
-      <a class="cvhaut" href="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit" target="_blank" download="cv mocquais-christopher.pdf">CV
+      <a class="cvhaut" href="img/Mocquais-Christopher-CV.pdf" target="_blank" download="cv mocquais-christopher.pdf">CV
       </a>
     </header>
     <nav id="myNav" class="overlaynav">
@@ -46,11 +47,11 @@
       <div id="Profil" class="fond moitie gauche">
         <h3>à propos</h3>
         <p>Intéressé par le domaine du numérique, j'ai décidé de développer mes connaissances et mes compétences à travers l'atelier numérique de l'Association Ageval.<br/>
-        Toujours désireux d'apprendre, j'ai dévéloppé mon savoir-être à travers mes expériences précédentes tels que la motivation, ponctualité, et le travail de groupe.</p>
+        Toujours désireux d'apprendre, j'ai développé mon savoir-être à travers mes expériences précédentes tels que la motivation, la ponctualité et le travail en équipe.</p>
       </div>
       <div class="moitie droit2 fond photo">
         <img src="img/photo.png" alt="dessin photo">
-          <p>Fait par Laura</p>
+          <p>Illustration faîte par Decroue Laura.</p>
       </div>
       <p class="clear"></p>
       <div id="Competence" class="moitie">
@@ -220,12 +221,10 @@
       <div id="Portfolio">
         <h3>Portfolio</h3>
         <div id="myBtnContainer">
-          <a class="btn active" onclick="show()"> Voir </a>
-          <a class="btn passive" onclick="hidden()"> Cacher </a>
-          <!-- <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-          <button class="btn" onclick="filterSelection('people')"> People</button> -->
+          <a id="portOuvert" onclick="show()"> Voir </a>
+          <a id="portFermer" onclick="hidden()"> Cacher </a>
         </div>
-        <div class="row">
+        <div id="row">
           <div class="column">
             <div class="content">
               <img src="img/html5.png" alt="essai">
@@ -310,7 +309,7 @@
             <p>Envoyer Mail</p>
           </div>
           <div class="cvgauche">
-            <a class="cvbas" href="#" target="_blank" download="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit">CV
+            <a class="cvbas" href="img/Mocquais-Christopher-CV.pdf" target="_blank" download="https://www.canva.com/design/DAEJ8HgESWw/oS9QQAlvVq4aie6Z5ud5qw/edit">CV
             </a>
           </div>
         </div>
