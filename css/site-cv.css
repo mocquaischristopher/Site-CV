@@ -36,7 +36,7 @@ p{
   padding: 0 15px;
 }
   /* header */
-.cvhaut, .cvbas{
+.cvhaut, .cvbas, #portOuvert, #portFermer{
   font-family: 'Gagalin';
 }
 a, p{
@@ -56,7 +56,7 @@ body{
 header{
   background-color: #cae8ff;
   background-blend-mode: soft-light;
-  background-image: url(../img/img-header2.png);
+  background-image: url(../img/img-header.png);
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -195,28 +195,38 @@ h4{
   padding: 0;
 }
   /* portfolio */
-.row {
-	margin: 8px -16px;
+#myBtnContainer{
+	text-align: center;
 }
-	/* Add padding BETWEEN each column (if you want) */
-.row, .row > .column {
+#portOuvert, #portFermer{
+	display: inline-block;
+	width: 35%;
+	text-align: center;
+	background-color: #1e73be;
+	box-shadow:2px 2px 6px black;
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+	margin: 15px;
+}
+#portOuvert:hover, #portFermer:hover{
+	background-color: black;
+}
+#row {
+	margin: 10;
+	display: none;
+}
+#row, #row > .column {
 	padding: 8px;
 }
-
-	/* Create three equal columns that floats next to each other */
 .column {
 	float: left;
-	width: 30%;
-	display: none; /* Hide columns by default */
 }
-
-	/* Clear floats after rows */
-.row:after {
+#row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
 	/* Content */
 .content {
 	background-color: white;
@@ -232,12 +242,12 @@ h4{
   width: 20%;
   text-align: center;
   margin: auto;
-  background-color: #666;
-  color: white;
-  border: none;
+	background-color: #1e73be;
+	box-shadow:2px 2px 6px black;
+	font-size: 40px;
+	color: white;
   outline: none;
   padding: 12px 16px;
-  /* background-color: white; */
   cursor: pointer;
 }
   /* footer */
@@ -341,7 +351,7 @@ h4{
     height: 550px;
   }
   .droit2>img{
-    height: 80%;
+    height: 70%;
   }
   #Competence{
     float: left;
@@ -699,6 +709,10 @@ h4{
     width: 250px;
     transform: translateX(28%);
   }
+		/* portfolio */
+	#portOuvert, #portFermer{
+		width: 45%;
+	}
     /* Début Diplôme */
   .container{
     flex-wrap: wrap;

@@ -6,14 +6,14 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
   // portfolio
-  let btnContainer = document.getElementById("myBtnContainer");
-  let btns = btnContainer.getElementsByClassName("btn");
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      let current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
+  let portfolio = document.getElementById("row");
+  let btn = document.getElementById("portOuvert");
+  let cls = document.getElementById("portFermer");
+  btn.onclick = function(show) {
+    portfolio.style.display = "block";
+  }
+  cls.onclick = function(hidden) {
+    portfolio.style.display = "none";
   }
   // copyright
 let date = new Date();
