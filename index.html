@@ -23,7 +23,7 @@
       </a>
     </header>
     <nav id="myNav" class="overlaynav">
-      <a class="closebtn" onclick="closeNav()">
+      <a class="closeNav" onclick="closeNav()">
         ×
       </a>
       <ul>
@@ -220,10 +220,37 @@
       <div id="Portfolio">
         <h3>Portfolio</h3>
         <div id="myBtnContainer">
-          <a class="btn active" onclick="filterSelection('all')"> Voir </a>
-          <!-- <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-          <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+          <a class="btn active" onclick="show()"> Voir </a>
+          <a class="btn passive" onclick="hidden()"> Cacher </a>
+          <!-- <button class="btn" onclick="filterSelection('cars')"> Cars</button>
           <button class="btn" onclick="filterSelection('people')"> People</button> -->
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <img src="img/html5.png" alt="essai">
+              <p>essai</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="img/html5.png" alt="essai">
+              <p>essai</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="img/html5.png" alt="essai">
+              <p>essai</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="img/html5.png" alt="essai">
+              <p>essai</p>
+            </div>
+          </div>
+
         </div>
       </div>
       <div id="Diplome" class="fond">
@@ -300,18 +327,6 @@
     <div class="fond copyright">
       <p>Copyright © <span id="date"> </span> Tous droits réservés.</p>
     </div>
-    <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
-      }
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-    </script>
-    <script>
-      let date = new Date();
-      let year = date.getFullYear();
-      document.getElementById("date").innerHTML = year;
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
