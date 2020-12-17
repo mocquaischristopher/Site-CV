@@ -352,6 +352,7 @@ h4{
   }
   .droit2>img{
     height: 70%;
+		padding: 65px 0 0 0;
   }
   #Competence{
     float: left;
