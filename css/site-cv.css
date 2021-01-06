@@ -72,12 +72,12 @@ header>a{
 }
 .cvhaut{
   display: block;
-  width: 50%;
+  width: 30%;
   text-align: center;
   margin: auto;
   border: solid 2px #1e73be;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 40px;
   color: #1e73be;
   text-decoration: none;
   padding: 7px;
@@ -98,6 +98,9 @@ h4{
 }
 .fond{
   background-color: #f5f5f5;
+}
+.illustrer{
+	font-size: 1em;
 }
   /* logiciels */
 .redim{
@@ -253,6 +256,7 @@ h4{
   /* footer */
 .footer{
   font-size: xx-large;
+	padding: 70px 0 0 0;
 }
 .droitmap{
   background-image: url(../img/map-footer.png);
@@ -297,8 +301,6 @@ h4{
     color: black;
     font-size: xx-large;
   }
-    /* fin header */
-
     /* début nav */
   nav{
     background-color: #1e73be;
@@ -339,8 +341,6 @@ h4{
   .nav{
     display: none;
   }
-  /* fin nav */
-
   /* début section */
   #Profil{
     height: 550px;
@@ -364,6 +364,7 @@ h4{
   }
   #Competence>p{
     text-align: justify;
+		padding: 0 0 0 35px;
   }
   #Logiciel{
     float: right;
@@ -379,7 +380,6 @@ h4{
     padding: 30px;
     text-align: center;
   }
-
   .none2{
     display: none;
   }
@@ -388,11 +388,17 @@ h4{
     box-sizing: border-box;
     position: relative;
   }
+	.gauche>p{
+		padding: 0 0 0 35px;
+	}
   .droit{
     float: right;
     box-sizing: border-box;
     position: relative;
   }
+	.droit>p{
+		padding: 0 35px 0 0;
+	}
   .gauche, .droit{
     height: 400px;
   }
@@ -432,7 +438,7 @@ h4{
   }
   .gauchelien>div{
     padding: 0 27%;
-    margin: 20px 0;
+    margin: 25px 0;
   }
   .gauchelien>div>p{
     display: inline-block;
@@ -447,7 +453,9 @@ h4{
     border-radius: 5px;
     padding: 5px 50px;
   }
-  /* fin footer */
+	.copyright{
+		padding: 10px;
+	}
 
   /* fin css pc*/
 }
@@ -459,7 +467,7 @@ h4{
     right: 25px;
   }
   div{
-    padding: 15px 0;
+    padding: 26px 0;
   }
   p{
     font-size: 1.15em;
@@ -510,12 +518,21 @@ h4{
   .nav{
     display: none;
   }
+	#Profil>p{
+		padding: 0 15px 0 25px;
+	}
+	h3{
+		padding: 85px 0 25px 0;
+	}
+	#Competence>p{
+		padding: 0 15px 0 25px;
+	}
  /* Début Logiciels */
   #Logiciel{
     height: 550px;
   }
   #Logiciel>h3{
-    margin: 2em 0;
+    margin: 0 0 2em 0;
   }
   .logiciel{
     padding: 0 10px;
@@ -549,6 +566,12 @@ h4{
   .gauche, .droit{
     height: 400px;
   }
+	.gauche>p{
+		padding: 0 0 0 15px;
+	}
+	.droit>p{
+		padding: 0 15px 0 0;
+	}
   .gauche>img, .droit>img{
     width: 250px;
     position: absolute;
@@ -612,21 +635,20 @@ h4{
     text-decoration: none;
     text-align: center;
   }
-
 }
 @media screen and (max-width: 767px){
   #scrollUp{
     right: 20px;
   }
   div{
-    padding: 15px 0 15px 0;
+    padding: 33px 0 15px 0;
   }
   p{
     font-size: 1.15em;
   }
   /* Début header */
   h1{
-    font-size: 2.3em;
+    font-size: 3em;
   }
   h2{
     font-size: 2em;
@@ -706,10 +728,6 @@ h4{
   .none1{
     display: none;
   }
-  #Experience>div>div>img{
-    width: 250px;
-    transform: translateX(28%);
-  }
 		/* portfolio */
 	#portOuvert, #portFermer{
 		width: 45%;
@@ -769,5 +787,22 @@ h4{
     text-decoration: none;
     text-align: center;
   }
-
+}
+@media screen and (max-width: 320px){
+	#Experience>div>div>img{
+    width: 250px;
+    transform: translateX(15%);
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 424px){
+	#Experience>div>div>img{
+		width: 250px;
+		transform: translateX(25%);
+	}
+}
+@media screen and (min-width: 425px) and (max-width: 767px){
+	#Experience>div>div>img{
+		width: 250px;
+		transform: translateX(35%);
+	}
 }
